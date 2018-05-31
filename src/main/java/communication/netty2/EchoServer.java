@@ -1,4 +1,4 @@
-package com.jhui.communication.netty2;
+package communication.netty2;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

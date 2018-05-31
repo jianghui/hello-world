@@ -1,4 +1,4 @@
-package com.jhui.communication.netty2;
+package communication.netty2;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -23,9 +23,9 @@ public class HttpServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                                 @Override
                                 public void initChannel(SocketChannel ch) throws Exception {
-                                    // server¶Ë·¢ËÍµÄÊÇhttpResponse£¬ËùÒÔÒªÊ¹ÓÃHttpResponseEncoder½øÐÐ±àÂë
+                                    // serverï¿½Ë·ï¿½ï¿½Íµï¿½ï¿½ï¿½httpResponseï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊ¹ï¿½ï¿½HttpResponseEncoderï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½
                                     ch.pipeline().addLast(new HttpResponseEncoder());
-                                    // server¶Ë½ÓÊÕµ½µÄÊÇhttpRequest£¬ËùÒÔÒªÊ¹ÓÃHttpRequestDecoder½øÐÐ½âÂë
+                                    // serverï¿½Ë½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½httpRequestï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊ¹ï¿½ï¿½HttpRequestDecoderï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½
                                     ch.pipeline().addLast(new HttpRequestDecoder());
                                     ch.pipeline().addLast(new HttpServerInboundHandler());
                                 }

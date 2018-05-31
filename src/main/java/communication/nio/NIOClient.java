@@ -1,4 +1,4 @@
-package com.jhui.communication.nio;
+package communication.nio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

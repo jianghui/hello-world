@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

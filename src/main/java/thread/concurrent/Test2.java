@@ -1,4 +1,4 @@
-package concurrent;
+package thread.concurrent;
 
 /**
  * Created by jhui on 2017/12/23.

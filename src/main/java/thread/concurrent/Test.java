@@ -1,4 +1,4 @@
-package concurrent;
+package thread.concurrent;
 
 import com.google.common.collect.Lists;
 

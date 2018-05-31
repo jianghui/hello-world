@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 
 import java.util.Collections;
 import java.util.concurrent.ArrayBlockingQueue;

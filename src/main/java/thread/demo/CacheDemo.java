@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +24,7 @@ public class CacheDemo {
 				rwl.writeLock().lock();
 				try{
 					if(value==null){
-						value = "aaaa";//实际失去queryDB();
+						value = "aaaa";//实锟斤拷失去queryDB();
 					}
 				}finally{
 					rwl.writeLock().unlock();

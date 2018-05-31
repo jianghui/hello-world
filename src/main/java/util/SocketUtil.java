@@ -1,5 +1,4 @@
-package com.jhui.util;
-
+package util;
 
 import java.util.List;
 public class SocketUtil {

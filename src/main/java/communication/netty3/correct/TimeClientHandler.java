@@ -1,4 +1,4 @@
-/*
+package communication.netty3.correct;/*
  * Copyright 2012 The Netty Project
  *
  * The Netty Project licenses this file to you under the Apache License,
@@ -13,7 +13,6 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.jhui.communication.netty3.correct;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

@@ -1,4 +1,4 @@
-package com.jhui.communication.rpc.client;
+package communication.rpc.client;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

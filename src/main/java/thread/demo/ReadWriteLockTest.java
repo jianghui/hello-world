@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 
 import java.util.Random;
 import java.util.concurrent.locks.ReadWriteLock;
@@ -32,7 +32,7 @@ public class ReadWriteLockTest {
 }
 
 class Queue3{
-	private Object data = null;//¹²ÏíÊý¾Ý£¬Ö»ÄÜÓÐÒ»¸öÏß³ÌÄÜÐ´¸ÃÊý¾Ý£¬µ«¿ÉÒÔÓÐ¶à¸öÏß³ÌÍ¬Ê±¶Á¸ÃÊý¾Ý¡£
+	private Object data = null;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ß³ï¿½Í¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
 	ReadWriteLock rwl = new ReentrantReadWriteLock();
 	public void get(){
 		rwl.readLock().lock();

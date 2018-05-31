@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
@@ -14,14 +14,14 @@ public class CountdownLatchTest {
 			Runnable runnable = new Runnable(){
 					public void run(){
 					try {
-						System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-								"Õý×¼±¸½ÓÊÜÃüÁî");						
+						System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+								"ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");						
 						cdOrder.await();
-						System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-						"ÒÑ½ÓÊÜÃüÁî");								
+						System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+						"ï¿½Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");								
 						Thread.sleep((long)(Math.random()*10000));	
-						System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-								"»ØÓ¦ÃüÁî´¦Àí½á¹û");						
+						System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+								"ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½î´¦ï¿½ï¿½ï¿½ï¿½");						
 						cdAnswer.countDown();						
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -33,14 +33,14 @@ public class CountdownLatchTest {
 		try {
 			Thread.sleep((long)(Math.random()*10000));
 		
-			System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-					"¼´½«·¢²¼ÃüÁî");						
+			System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+					"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");						
 			cdOrder.countDown();
-			System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-			"ÒÑ·¢ËÍÃüÁî£¬ÕýÔÚµÈ´ý½á¹û");	
+			System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+			"ï¿½Ñ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£¬ï¿½ï¿½ï¿½ÚµÈ´ï¿½ï¿½ï¿½ï¿½");	
 			cdAnswer.await();
-			System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-			"ÒÑÊÕµ½ËùÓÐÏìÓ¦½á¹û");	
+			System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+			"ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½");	
 		} catch (Exception e) {
 			e.printStackTrace();
 		}				

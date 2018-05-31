@@ -1,4 +1,4 @@
-package com.jhui.communication.netty2;
+package communication.netty2;
 
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONNECTION;
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_LENGTH;

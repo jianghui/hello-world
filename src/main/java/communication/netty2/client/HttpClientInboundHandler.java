@@ -1,4 +1,4 @@
-package com.jhui.communication.netty2.client;
+package communication.netty2.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

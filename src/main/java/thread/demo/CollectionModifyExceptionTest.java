@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -8,14 +8,14 @@ public class CollectionModifyExceptionTest {
 		Collection users = new CopyOnWriteArrayList();
 			
 			//new ArrayList();
-		users.add(new User("ÕÅÈı",28));	
-		users.add(new User("ÀîËÄ",25));			
-		users.add(new User("ÍõÎå",31));	
+		users.add(new User("ï¿½ï¿½ï¿½ï¿½",28));	
+		users.add(new User("ï¿½ï¿½ï¿½ï¿½",25));			
+		users.add(new User("ï¿½ï¿½ï¿½ï¿½",31));	
 		Iterator itrUsers = users.iterator();
 		while(itrUsers.hasNext()){
 			System.out.println("aaaa");
 			User user = (User)itrUsers.next();
-			if("ÀîËÄ".equals(user.getName())){
+			if("ï¿½ï¿½ï¿½ï¿½".equals(user.getName())){
 				users.remove(user);
 				//itrUsers.remove();
 			} else {

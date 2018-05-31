@@ -5,7 +5,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Alibaba.com.
  */
-package com.jhui.communication.rpc;
+package communication.rpc;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -21,10 +21,10 @@ import java.net.Socket;
 public class RpcFramework {
 
     /**
-     * ±©Â¶·þÎñ
+     * ï¿½ï¿½Â¶ï¿½ï¿½ï¿½ï¿½
      * 
-     * @param service ·þÎñÊµÏÖ
-     * @param port ·þÎñ¶Ë¿Ú
+     * @param service ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+     * @param port ï¿½ï¿½ï¿½ï¿½Ë¿ï¿½
      * @throws Exception
      */
     public static void export(final Object service, int port) throws Exception {

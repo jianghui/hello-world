@@ -1,4 +1,4 @@
-package com.jhui.communication.netty2.client;
+package communication.netty2.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
@@ -31,10 +31,6 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 		System.out.println("server info : " + body);
 	}
 
-	@Override
-	protected void messageReceived(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf) throws Exception {
-
-	}
 
 	protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg) throws Exception {
 		System.out.println("Client received: " + ByteBufUtil.hexDump(msg.readBytes(msg.readableBytes())));

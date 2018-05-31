@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

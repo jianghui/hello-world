@@ -1,4 +1,4 @@
-package com.jhui.communication.test;
+package communication.test;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

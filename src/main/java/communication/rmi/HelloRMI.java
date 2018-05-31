@@ -1,5 +1,6 @@
-package com.jhui.communication.rmi;
-import java.rmi.Remote; 
+package communication.rmi;
+
+import java.rmi.Remote;
 import java.rmi.RemoteException; 
 public interface HelloRMI extends Remote {   
    

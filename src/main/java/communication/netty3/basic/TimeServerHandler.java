@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package com.jhui.communication.netty3.basic;
+package communication.netty3.basic;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

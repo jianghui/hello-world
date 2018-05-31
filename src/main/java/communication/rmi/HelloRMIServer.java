@@ -1,4 +1,4 @@
-package com.jhui.communication.rmi;
+package communication.rmi;
 
 import java.net.MalformedURLException;   
 import java.rmi.AlreadyBoundException;   
@@ -9,30 +9,30 @@ import java.rmi.registry.LocateRegistry;
 /**  
 * User: staratsky  
 * Date: 2008-8-7 22:03:35  
-* ´´½¨RMI×¢²á±í£¬Æô¶¯RMI·þÎñ£¬²¢½«Ô¶³Ì¶ÔÏó×¢²áµ½RMI×¢²á±íÖÐ¡£  
+* ï¿½ï¿½ï¿½ï¿½RMI×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RMIï¿½ï¿½ï¿½ñ£¬²ï¿½ï¿½ï¿½Ô¶ï¿½Ì¶ï¿½ï¿½ï¿½×¢ï¿½áµ½RMI×¢ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½  
 */  
 public class HelloRMIServer {   
     public static void main(String args[]) {   
         try {   
-            //´´½¨Ò»¸öÔ¶³Ì¶ÔÏó   
+            //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ô¶ï¿½Ì¶ï¿½ï¿½ï¿½   
             HelloRMI rhello = new HelloRMIImpl();   
-            //±¾µØÖ÷»úÉÏµÄÔ¶³Ì¶ÔÏó×¢²á±íRegistryµÄÊµÀý£¬²¢Ö¸¶¨¶Ë¿ÚÎª8888£¬ÕâÒ»²½±Ø²»¿ÉÉÙ£¨JavaÄ¬ÈÏ¶Ë¿ÚÊÇ1099£©£¬±Ø²»¿ÉÈ±µÄÒ»²½£¬È±ÉÙ×¢²á±í´´½¨£¬ÔòÎÞ·¨°ó¶¨¶ÔÏóµ½Ô¶³Ì×¢²á±íÉÏ   
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½Ô¶ï¿½Ì¶ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½Registryï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ë¿ï¿½Îª8888ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½Ù£ï¿½JavaÄ¬ï¿½Ï¶Ë¿ï¿½ï¿½ï¿½1099ï¿½ï¿½ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½È±ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½È±ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ó¶¨¶ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½   
             LocateRegistry.createRegistry(8888);   
   
-            //°ÑÔ¶³Ì¶ÔÏó×¢²áµ½RMI×¢²á·þÎñÆ÷ÉÏ£¬²¢ÃüÃûÎªRHello   
-            //°ó¶¨µÄURL±ê×¼¸ñÊ½Îª£ºrmi://host:port/name(ÆäÖÐÐ­ÒéÃû¿ÉÒÔÊ¡ÂÔ£¬ÏÂÃæÁ½ÖÖÐ´·¨¶¼ÊÇÕýÈ·µÄ£©   
+            //ï¿½ï¿½Ô¶ï¿½Ì¶ï¿½ï¿½ï¿½×¢ï¿½áµ½RMI×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªRHello   
+            //ï¿½ó¶¨µï¿½URLï¿½ï¿½×¼ï¿½ï¿½Ê½Îªï¿½ï¿½rmi://host:port/name(ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½Ä£ï¿½   
             Naming.bind("rmi://localhost:8888/RHello", rhello);   
             // Naming.bind("//localhost:8888/RHello",rhello);   
   
-            System.out.println(">>>>>INFO:Ô¶³ÌIHello¶ÔÏó°ó¶¨³É¹¦£¡");   
+            System.out.println(">>>>>INFO:Ô¶ï¿½ï¿½IHelloï¿½ï¿½ï¿½ï¿½ó¶¨³É¹ï¿½ï¿½ï¿½");   
         } catch (RemoteException e) {   
-            System.out.println("´´½¨Ô¶³Ì¶ÔÏó·¢ÉúÒì³££¡");   
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½");   
             e.printStackTrace();   
         } catch (AlreadyBoundException e) {   
-            System.out.println("·¢ÉúÖØ¸´°ó¶¨¶ÔÏóÒì³££¡");   
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ó¶¨¶ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½");   
             e.printStackTrace();   
         } catch (MalformedURLException e) {   
-            System.out.println("·¢ÉúURL»ûÐÎÒì³££¡");   
+            System.out.println("ï¿½ï¿½ï¿½ï¿½URLï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½");   
             e.printStackTrace();   
         }   
     }   

@@ -1,4 +1,4 @@
-package com.jhui.communication.netty2;
+package communication.netty2;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

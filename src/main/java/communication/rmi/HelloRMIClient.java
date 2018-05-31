@@ -1,4 +1,4 @@
-package com.jhui.communication.rmi;
+package communication.rmi;
 
 import java.net.MalformedURLException;   
 import java.rmi.Naming;   
@@ -8,12 +8,12 @@ import java.rmi.RemoteException;
 /**  
 * User: staratsky
 * Date: 2008-8-7 22:21:07  
-* ¿Í»§¶Ë²âÊÔ£¬ÔÚ¿Í»§¶Ëµ÷ÓÃÔ¶³Ì¶ÔÏóÉÏµÄÔ¶³Ì·½·¨£¬²¢·µ»Ø½á¹û¡£  
+* ï¿½Í»ï¿½ï¿½Ë²ï¿½ï¿½Ô£ï¿½ï¿½Ú¿Í»ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ô¶ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½Ïµï¿½Ô¶ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½ï¿½  
 */  
 public class HelloRMIClient {   
     public static void main(String args[]){   
         try {   
-            //ÔÚRMI·þÎñ×¢²á±íÖÐ²éÕÒÃû³ÆÎªRHelloµÄ¶ÔÏó£¬²¢µ÷ÓÃÆäÉÏµÄ·½·¨   
+            //ï¿½ï¿½RMIï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªRHelloï¿½Ä¶ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÄ·ï¿½ï¿½ï¿½   
             HelloRMI rhello =(HelloRMI) Naming.lookup("rmi://localhost:8888/RHello");   
             System.out.println(rhello.helloWorld());   
             System.out.println(rhello.sayHelloToSomeBody("staratsky"));   

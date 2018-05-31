@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -13,12 +13,12 @@ public class ExchangerTest {
 				try {				
 
 					String data1 = "zxx";
-					System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-					"ÕýÔÚ°ÑÊý¾Ý" + data1 +"»»³öÈ¥");
+					System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+					"ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½ï¿½ï¿½" + data1 +"ï¿½ï¿½ï¿½ï¿½È¥");
 					Thread.sleep((long)(Math.random()*10000));
 					String data2 = (String)exchanger.exchange(data1);
-					System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-					"»»»ØµÄÊý¾ÝÎª" + data2);
+					System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+					"ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½Îª" + data2);
 				}catch(Exception e){
 					
 				}
@@ -29,12 +29,12 @@ public class ExchangerTest {
 				try {				
 
 					String data1 = "lhm";
-					System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-					"ÕýÔÚ°ÑÊý¾Ý" + data1 +"»»³öÈ¥");
+					System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+					"ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½ï¿½ï¿½" + data1 +"ï¿½ï¿½ï¿½ï¿½È¥");
 					Thread.sleep((long)(Math.random()*10000));					
 					String data2 = (String)exchanger.exchange(data1);
-					System.out.println("Ïß³Ì" + Thread.currentThread().getName() + 
-					"»»»ØµÄÊý¾ÝÎª" + data2);
+					System.out.println("ï¿½ß³ï¿½" + Thread.currentThread().getName() + 
+					"ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½Îª" + data2);
 				}catch(Exception e){
 					
 				}				

@@ -1,4 +1,4 @@
-package cn.itcast.heima2;
+package thread.demo;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -11,10 +11,10 @@ public class BlockingQueueTest {
 					while(true){
 						try {
 							Thread.sleep((long)(Math.random()*1000));
-							System.out.println(Thread.currentThread().getName() + "×¼±¸·ÅÊý¾Ý!");							
+							System.out.println(Thread.currentThread().getName() + "×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!");							
 							queue.put(1);
-							System.out.println(Thread.currentThread().getName() + "ÒÑ¾­·ÅÁËÊý¾Ý£¬" + 							
-										"¶ÓÁÐÄ¿Ç°ÓÐ" + queue.size() + "¸öÊý¾Ý");
+							System.out.println(Thread.currentThread().getName() + "ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½" + 							
+										"ï¿½ï¿½ï¿½ï¿½Ä¿Ç°ï¿½ï¿½" + queue.size() + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 						} catch (InterruptedException e) {
 							e.printStackTrace();
 						}
@@ -29,12 +29,12 @@ public class BlockingQueueTest {
 			public void run(){
 				while(true){
 					try {
-						//½«´Ë´¦µÄË¯ÃßÊ±¼ä·Ö±ð¸ÄÎª100ºÍ1000£¬¹Û²ìÔËÐÐ½á¹û
+						//ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½Ë¯ï¿½ï¿½Ê±ï¿½ï¿½Ö±ï¿½ï¿½Îª100ï¿½ï¿½1000ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½Ð½ï¿½ï¿½
 						Thread.sleep(1);
-						System.out.println(Thread.currentThread().getName() + "×¼±¸È¡Êý¾Ý!");
+						System.out.println(Thread.currentThread().getName() + "×¼ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½!");
 						queue.take();
-						System.out.println(Thread.currentThread().getName() + "ÒÑ¾­È¡×ßÊý¾Ý£¬" + 							
-								"¶ÓÁÐÄ¿Ç°ÓÐ" + queue.size() + "¸öÊý¾Ý");					
+						System.out.println(Thread.currentThread().getName() + "ï¿½Ñ¾ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½" + 							
+								"ï¿½ï¿½ï¿½ï¿½Ä¿Ç°ï¿½ï¿½" + queue.size() + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");					
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
