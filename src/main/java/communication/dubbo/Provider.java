@@ -1,4 +1,4 @@
-package com.jhui.communication.dubbo;
+package communication.dubbo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

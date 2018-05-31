@@ -1,4 +1,9 @@
-package com.jhui.communication.netty;
+package communication.netty;
+
+import communication.netty.InboundHandler1;
+import communication.netty.InboundHandler2;
+import communication.netty.OutboundHandler1;
+import communication.netty.OutboundHandler2;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

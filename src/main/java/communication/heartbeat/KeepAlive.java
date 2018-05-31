@@ -1,4 +1,4 @@
-package com.jhui.communication.heartbeat;
+package communication.heartbeat;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;

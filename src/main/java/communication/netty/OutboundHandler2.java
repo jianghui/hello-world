@@ -1,4 +1,5 @@
-package com.jhui.communication.netty;
+package communication.netty;
+
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelOutboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;

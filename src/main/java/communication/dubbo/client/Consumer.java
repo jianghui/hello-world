@@ -1,6 +1,6 @@
 package communication.dubbo.client;
 
-import com.jhui.communication.dubbo.DemoService;
+import communication.dubbo.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;

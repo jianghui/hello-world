@@ -1,5 +1,6 @@
 
 import communication.dubbo.DemoService;
+import communication.dubbo.User;
 
 import java.util.ArrayList;
 import java.util.List;
