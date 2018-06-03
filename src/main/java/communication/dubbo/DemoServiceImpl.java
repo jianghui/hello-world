@@ -1,3 +1,4 @@
+package communication.dubbo;
 
 import communication.dubbo.DemoService;
 import communication.dubbo.User;

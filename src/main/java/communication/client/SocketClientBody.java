@@ -1,6 +1,7 @@
 package communication.client;
 
-import com.jhui.util.SocketUtil;
+
+import util.SocketUtil;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;

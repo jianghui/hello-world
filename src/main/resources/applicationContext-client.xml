@@ -16,6 +16,6 @@
 
 	<!-- 生成远程服务代理，可以像使用本地bean一样使用demoService -->
 	<dubbo:reference id="demoService"
-		interface="com.jhui.communication.dubbo.DemoService" />
+		interface="communication.dubbo.DemoService" />
 
 </beans>

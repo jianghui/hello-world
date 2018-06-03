@@ -1,5 +1,6 @@
 package communication.client;
-import com.jhui.util.SocketUtil;
+
+import util.SocketUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,7 +22,7 @@ public class SocketServerBody {
 			
 			byte[] bytes=readXmlBytesFromSocket(socket);
 
-			byte[] bHeadr1 = SocketUtil.getSubByte(bytes, 0, 3);  
+			byte[] bHeadr1 = SocketUtil.getSubByte(bytes, 0, 3);
 			System.out.println("header 1:"+SocketUtil.byteToInt(bHeadr1));
 			byte[] bHeadr2=SocketUtil.getSubByte(bytes, 4, 7);
 			System.out.println("header 2:"+SocketUtil.byteToInt(bHeadr2));
