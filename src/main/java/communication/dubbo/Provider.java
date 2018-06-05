@@ -8,6 +8,6 @@ public class Provider {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				new String[] { "applicationContext-server.xml" });
 		context.start();
-		System.in.read(); // 为保证服务一直开�?��利用输入流的阻塞来模�?
+		System.in.read();
 	}
 }
