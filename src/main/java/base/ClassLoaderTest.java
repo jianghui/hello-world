@@ -9,7 +9,7 @@ public class ClassLoaderTest {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         System.out.println(ClassLoaderTest.class.getClassLoader());
         MyClassLoader loader = new MyClassLoader();
-        Class c = loader.loadClass("jvm.Test");
+        Class c = loader.loadClass("jvm.ThreadPoolTest");
         System.out.println(c.getClassLoader());
 
     }
