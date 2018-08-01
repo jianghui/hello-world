@@ -16,6 +16,17 @@ public class Test {
         Test test = new Test();
         test.executeRunnable();
         System.out.println("main thread end");
+        System.out.println();
+
+        System.out.println();
+        double  a = 3;
+
+        float f = 2f;
+        String s = "";
+
+
+
+
 //        test.shutdown();
         System.out.println("exec shutdown");
     }
