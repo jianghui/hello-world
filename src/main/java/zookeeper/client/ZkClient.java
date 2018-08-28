@@ -47,6 +47,7 @@ public class ZkClient {
 
         zk.exists("/root", true);
         zk.delete("/root", -1);
+        zk.create("/sqq/ds/sqq_service_tools", "{\"driverClass\":\"com.mysql.jdbc.Driver\",\"jdbcUrl\":\"jdbc:mysql://192.168.122.116:3306/sqq_service_tools?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull\",\"password\":\"Wjl20160601\",\"user\":\"alladmin\"}".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         System.out.println("---------------------");
     }
 
