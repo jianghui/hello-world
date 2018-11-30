@@ -208,6 +208,11 @@
             <version>1.6.0.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.sqq</groupId>
+            <artifactId>sqq-tool-redisson</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

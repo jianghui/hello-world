@@ -35,7 +35,9 @@ public class RedisUtil {
 
         RedisUtil util = (RedisUtil) context.getBean("redisUtil");
 
-        System.out.println(JSONObject.toJSONString(util.keys("name")));
+//        System.out.println(JSONObject.toJSONString(util.keys("name")));
+		util.set("name","zhangsan");
+		util.expire("name",10,TimeUnit.SECONDS);
     }
 
 
